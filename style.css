@@ -1,0 +1,71 @@
+/* layout styles*/
+body {
+    background-color: hsl(233, 47%, 7%);
+    /*
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Inter', sans-serif;
+    */
+}  
+.row {
+    --bs-gutter-x: none;
+}
+body .container {
+    padding: 40px 40px;
+}  
+body .aaa {
+    border-radius: 8px;
+    background-color:hsl(244, 38%, 16%);
+    padding: 0px;
+}
+
+body .row .div-img .capa-color{
+    background-image: linear-gradient(rgba(170,91,219,.5),rgba(170,91,219,.5));
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+body .row .div-img img{
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   opacity: 0.5;
+} 
+
+body .row .div-text {
+    text-align: center;
+    padding: 40px;
+} 
+
+body .div-text h1 {
+    font-weight: bold;
+    color:hsl(0, 0%, 100%);
+    padding-bottom: 20px;
+}  
+
+body .div-text h1 span {
+    color: hsl(277, 64%, 61%)
+}
+body .div-text h2 {
+   
+    color: hsl(0, 0%, 100%);
+}  
+
+body .div-text p {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+}  
+body .div-text h1 + p {
+    padding-bottom: 20px;
+}
+
+body .div-text .stats div {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+} 
+
+@media (min-width: 767px){
+    body .row .div-img .capa-color, body .row .div-img img {border-top-left-radius: 0px;border-bottom-right-radius: 8px;}
+    body .container .div-text {text-align: left;}  
+
+    body .container .div-text .stats {margin-top: 40px;} 
+}
